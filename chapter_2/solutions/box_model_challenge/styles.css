@@ -1,0 +1,35 @@
+.box1{
+	width: 200px;
+    padding: 10px 20px;
+    margin: 30px;
+    border: 2px dotted;
+    color: white;
+    background: DarkGray;
+    box-sizing: content-box;
+}
+
+.box2{
+	width: 200px;
+    padding: 10px 20px;
+    margin: 30px;
+    border: 2px dotted;
+    color: white;
+    background: DarkGray;
+    box-sizing: content-box;
+}
+
+.image1{
+	font-size:0;
+	display: inline-block;
+	background: grey;
+	padding:10px;
+	box-sizing:border-box;
+	margin-bottom:10px;
+}
+
+.image2{
+	font-size:0;
+	display: inline-block;
+	border:10px solid grey;
+	box-sizing:border-box;
+}

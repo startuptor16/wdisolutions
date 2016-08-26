@@ -1,0 +1,65 @@
+body>div {   /*removed container class */
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color:white;
+    margin:0 auto;
+    max-width:960px;
+    padding-bottom:250px;
+}
+.jumbotron {
+    background-color:#3498db;
+    text-align: center;
+    padding: 50px;
+}
+.jumbotron h1 {
+    font-size:5em; /* used em */  
+}
+.jumbotron h2, .jumbotron h1{ /* combined */
+    font-weight: inherit;
+}
+img{/* moved  content img class */
+    width: 100%;
+}
+.features, .resources {/* combined */
+    float:left;
+    width:50%;
+    background-color: #9b59b6;
+}
+.features-content, .resources-content {  /* combined */
+    padding: 20px;
+}
+.features-content ul, .resources-content ul  {/* combined */
+    line-height: 30px;
+}
+.features-heading, .resources-heading{ /*combined */
+    text-decoration: underline;
+}
+.resources {
+    background-color: #2ecc71;
+}
+ul a { /* removed class infront on ul a */
+    color:inherit; /* changed to inherit */
+}
+li span{   /* took away class  'color' */
+    color:#9b59b6;
+}
+/*.content {
+    text-align: center;
+    padding: 50px;
+}*/
+/*.resources-content {
+    padding: 20px;
+}*/
+/*.resources-heading {
+    text-decoration: underline;
+    color:white;
+}*/
+/*.resources-content ul {
+    color:white;
+    line-height: 30px;
+}*/
+/*.quotes {
+    width: 100%;
+}*/
+/*.quotes-heading {
+    color:white;
+}*/

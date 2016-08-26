@@ -1,0 +1,40 @@
+nav{
+	width: 110%;
+	height:50px;
+	background-color: yellow;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+header{
+	width:70%;
+	text-align: center;
+	margin:0 auto;
+	height: 150px;
+	background-color: red;
+	margin-top: 60px;
+}
+
+aside{
+	width:180px;
+	height: 600px;
+	background-color:blue;
+	display:inline-block;
+	float:left;
+	margin: 5px;
+}
+
+.content{
+	width:200px;
+	height: 200px;
+	background-color:green;
+	display:inline-block;
+	margin-top: 5px;
+}
+
+.main-container{
+	margin:0 auto;
+	width:70%;
+	text-align: center;
+}

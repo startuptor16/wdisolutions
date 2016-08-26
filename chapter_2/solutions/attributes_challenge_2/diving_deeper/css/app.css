@@ -1,0 +1,49 @@
+.line{
+	width:1000px ;
+	height:2px; 
+	margin-bottom:20px;
+}
+.blue{
+	background-color:blue;
+}
+.red{
+	background-color:red;
+}
+.green{
+	background-color:green;
+}
+
+td{
+	border:1px solid;
+}
+
+.bold{
+	text-align:center; 
+	font-weight: bold;
+}
+
+.box1{
+	width:500px; 
+	height:100px; 
+	background-color:#FF6A74 ;
+	border-style: solid; 
+	border-color:black; 
+	float:left;
+}
+.box2{
+	opacity: 0.6; 
+	width:500px; 
+	height:100px; 
+	background-color:#8B65FF; 
+	border-style: dashed; 
+	border-color:red; 
+	float:left; 
+	position:relative;
+	left:-100px;
+}
+.table{
+	border:1px solid; 
+	width:910px; 
+	position:absolute; 
+	bottom:45%;
+}

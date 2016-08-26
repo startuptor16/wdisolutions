@@ -1,0 +1,12 @@
+textarea{
+	vertical-align: top;
+}
+label{
+	display: inline-block;
+	text-align: right;
+}
+
+form .invalid{
+	border: 2px solid red;
+	border-radius:3px;
+}

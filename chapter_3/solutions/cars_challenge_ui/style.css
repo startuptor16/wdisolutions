@@ -1,0 +1,14 @@
+form{
+	max-width: 400px;
+	margin:0 auto;
+	display: none;
+}
+
+.car-detail{
+	font-weight:bold;
+}
+
+.result{
+	display: none;
+	text-align: center;
+}

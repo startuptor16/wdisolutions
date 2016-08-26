@@ -1,0 +1,35 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/insult.srv.js"></script>
+  <script src="js/insult.ctrl.js"></script>
+  <script src="js/titleCaseFilter.js"></script>
+  <script src="js/snakeCaseFilter.js"></script>
+  <script src="js/mixedCaseFilter.js"></script>
+  <script src="js/leetSpeakFilter.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+
+<body ng-app="insultApp" ng-controller="InsultCtrl as ctrl">
+  <div class="container">
+    <h1 class="text-center">Insult Generator</h1>
+
+    <div class="jumbotron">
+      <h2 class="text-center">Unfiltered: {{ctrl.insult}}</h2>
+ <!-- <h2 class="text-center">Title Case: {{ctrl.insult | titleCaseFilter}}</h2>
+      <h2 class="text-center">Snake Case: {{ctrl.insult | snakeCaseFilter}}</h2>
+      <h2 class="text-center">Mixed Case: {{ctrl.insult | mixedCaseFilter}}</h2>
+      <h2 class="text-center">L337 Sp34k: {{ctrl.insult | leetSpeakFilter}}</h2> -->
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg" ng-click="ctrl.replaceInsult()">Sayith</button>
+    </div>
+  </div>
+
+</body>
+</html>

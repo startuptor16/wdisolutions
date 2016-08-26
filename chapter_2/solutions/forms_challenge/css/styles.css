@@ -1,0 +1,7 @@
+textarea{
+	vertical-align: top;
+}
+label{
+	display: inline-block;
+	text-align: right;
+}

@@ -1,0 +1,70 @@
+.chatDialog{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+}
+.chatBox{
+    display: inline-block;
+    width:25%;
+    border: 1px solid gray;
+
+}
+.nameLabel .fa-circle{
+    font-size: 80%;
+    display: inline-block;
+    color: green;
+    padding-left: 5px;
+}
+.nameLabel{
+    float:left;
+    color: white;
+    padding-left: 5px;
+}
+.icons{
+    display: inline-block;
+    float:right;
+    opacity: .6;
+    color:gray;
+}
+ul{
+    padding-top: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    list-style-type: none;
+}
+li{
+    text-align: left;
+}
+
+.reply{
+    text-align: right;
+    color:darkgreen;
+}
+
+.fa-times{
+    opacity: .6;
+    padding: 5px;
+    float:right;
+    color:gray;
+}
+.fa-times:hover, .fa-minus:hover, .fa-plus:hover{
+    color: azure;
+}
+
+.top{
+       background-color: #404040;
+       height: 40px;
+}
+textarea.form-control {
+    height: 50px;
+}
+.content{
+    height: 200px;
+    overflow: scroll;
+}
+.btn-primary{
+    width: 100%;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="app.ctrl.js"></script>
+<script type="text/javascript" src="lastletter.fltr.js"></script>
+	<title></title>
+</head>
+<body ng-app ="MyApp" ng-controller="AppCtrl as ctrl">
+
+<!-- Step 1: Add the lowercase  filter to this h2 tag value -->
+	<h2>{{ ctrl.name | lowercase}}</h2>
+
+<!-- Step 2: Add the currency filter to this h4 tag value -->
+	<h4>{{ 12*2 | currency}}</h4>
+
+<!-- Step 3: Add the number filter ,with 3 decimal places, to this p tag value -->
+	<p>{{ 9.192738716623 | number:3}}</p>
+
+<!-- Step 4: Add a filter to this array that filters by the word "Cat" -->
+	<p>{{ ["Cat", "Dog", "Bird", "Dragon","Cat","Mouse","Moose"] | filter:"cat"}}</p>
+
+<!-- Step 5: add the orderBy filter to this array of names in ng-repeat so they are ordered alphabetically -->
+	<!-- if no property is provided to orderBy, it will automatically sort alphabetically or by numerical value, ascending -->
+	<div ng-repeat="name in ctrl.names | orderBy">{{name}}</div> 
+
+<!-- Step 6: add the orderBy filter to this array of numbers in the ng-repeat so they are ordered lowest to highest -->
+	<div ng-repeat="item in ctrl.items | orderBy">{{item}}</div>
+
+<!-- Step 7: add a filter to this array of names to only show 'John' -->
+	<div ng-repeat="item in ctrl.names | filter:'John'">{{item}}</div>
+
+<!-- Step 8: creat your own filter to this variable that only capitalizes the last letter of the word. HINT: Look into the substring() method -->
+	<span>{{ctrl.last_letter_name|lastLetterFilter}}</span>
+
+</body>
+</html>

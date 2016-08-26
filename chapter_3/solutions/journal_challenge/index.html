@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+	<h1>Journal</h1>
+	<div class="row">
+		<div class="col-sm-4">
+			<button class="btn" id="viewall">View All</button>
+			<button class="btn" id="viewalll">Show ALLLLLLLL</button>
+			<h2>Search</h2>
+			<form id="searchForm">
+				<input class="form-control" type="text" id="searchInput" />
+				<button class="btn" type="submit">Search</button>
+			</form>
+			<h2>New Entry</h2>
+			<form id="newEntryForm">
+				<input class="form-control" type="text" id="title" placeholder="title">
+				<input class="form-control" type="text" id="author" placeholder="author">
+				<button class="btn" type="submit">add new entry</button>
+			</form>			
+		</div>
+
+		<div id="entries" class="col-sm-8">
+			<!-- <div class="entry">
+				<h3>Title</h3>
+				<p>Author</p>
+				<p>timestamp</p>
+			</div> -->
+		</div>
+	</div>
+
+</div>
+
+<style type="text/css">
+	.entry {
+		background-color: #DDDDDD;
+		padding: 10px;
+		margin-bottom: 50px;
+	}
+	.deleted {
+		color: red;
+	}
+</style>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

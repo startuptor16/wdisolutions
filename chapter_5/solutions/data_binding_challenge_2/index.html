@@ -1,0 +1,53 @@
+<!-- Change this file! Remember to google each directive to see how they work( example, angular ng-repeat , -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Angular Vendor Dependencies -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.js"></script>
+
+ 	<!-- CSS -->
+ 	<link rel="stylesheet" type="text/css" href="css/app.css">
+
+	<!-- App Code -->
+	<script type="text/javascript" src="app.js"></script>
+
+</head>
+<!-- STEP1: refer to app.js for app and controller names:
+ add ng-app="The name of the app"  and ng-controller ="name of your controller as ctrl" to the body tag -->
+<body ng-app="MyApp" ng-controller="MyController as ctrl"> 
+
+<!-- STEP 2: inside the {{}} put the value of the variable greeting ( remember to put ctrl. in front of it!)  -->
+	<h2>{{ctrl.greeting}}</h2>
+
+
+<!-- STEP 3: using ng-show, make this div disappear when the variable num1 is less than num2 . Remember that you do not need {{}} if you are writing inside of a ng-directive-->
+
+	<div ng-show="ctrl.num1 < ctrl.num2">
+		Only show this when num1 is &lt; num 2
+	</div>
+
+<!-- STEP 4: using ng-repeat, loop through the people array ( see app.js) and output the name,age and job of each "person" -->
+	<ul>
+		<li ng-repeat="person in ctrl.peopleArray">
+			<div>Name: {{person.name}}</div>
+			<div>Age: {{person.age}}</div>
+			<div>Job: {{person.job}}</div>
+		</li>
+	</ul>
+
+<!-- STEP 5: using ng-model make the variable textbox in app.js equal to the value of this input -->
+	<div>
+		<input ng-model="ctrl.textBox" type="text">
+	</div>
+
+<!-- STEP 6: using ng-click, make this button call the function click, from app.js. You call a function the same way as a variable, ctrl.theFunctionName()-->
+	<div>
+		<button ng-click="ctrl.click()">Click me!</button>
+	</div>
+	
+	<!-- STEP 7: using ng-class, add the already created class image , to this div when the variable boolean in app.js is true -->
+
+	<div ng-class="{'image':ctrl.boolean}"></div>
+
+</body>
+</html>

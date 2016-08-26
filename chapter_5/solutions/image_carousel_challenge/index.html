@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  
+  <!--TODO #2: use the carousel controller for everything inside the body tag.-->
+  <body ng-app="carousel" ng-controller='CarouselCtrl as ctrl'>
+    
+    <h1>Calvin Carousel</h1>
+    <div>
+      <!--TODO #3: 
+        set this img tag's src to the url for the active image.
+        To start just try to get the url for the first image
+      -->
+      <img ng-src="{{ctrl.images[ctrl.count]}}">  
+    </div>
+    <div>
+      <!--TODO #4: clicking previous should show the previous image-->
+      <button ng-click="ctrl.change(-1)">Previous</button>
+      
+      <!--TODO #5: 
+        Dynamically set which image number is being shown 
+        and the total number of images 
+      -->
+      <span>{{ctrl.count + 1}} of {{ctrl.images.length}}</span>
+      
+      <!--TODO #4: clicking next should show the next image-->
+      <button ng-click="ctrl.change(1)">Next</button>
+    </div>
+    
+
+  </body>
+  
+</html>
